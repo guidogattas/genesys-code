@@ -1,6 +1,6 @@
 const WhatWeDo = () => {
     return (
-        <div>WhatWeDo</div>
+        <div>Puto el que lee</div>
     )
 }
 
