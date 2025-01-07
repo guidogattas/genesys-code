@@ -1,6 +1,6 @@
 const WhoWeAre = () => {
     return (
-        <div>WhoWeAre</div>
+        <h1 className="flex justify-center text-3xl align-middle">WhoWeAre</h1>
     )
 }
 

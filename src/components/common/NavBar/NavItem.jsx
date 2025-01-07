@@ -1,19 +1,40 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const NavItem = ({ to, label, className = "hover:bg-secondaryText", onClick, children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // Cerrar el dropdown si haces clic fuera
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsDropdownOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
-        <li className="relative w-full group ">
+        <li className="relative w-full group" ref={dropdownRef}>
             <div
-                className={`block py-4 px-4 font-bold text-center md:text-left transition duration-300 rounded cursor-pointer md:w-auto ${className} `}
+                className={`block py-4 px-4 font-bold text-center md:text-left transition duration-300 rounded cursor-pointer md:w-auto ${className}`}
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
                 {to ? (
-                    <Link to={to} onClick={onClick} className="block w-full h-full">
+                    <Link
+                        to={to}
+                        onClick={() => {
+                            setIsDropdownOpen(false); 
+                            if (onClick) onClick();
+                        }}
+                        className="block w-full h-full"
+                    >
                         {label}
                     </Link>
                 ) : (
