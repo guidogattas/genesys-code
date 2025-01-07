@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "brandon","Inter", system-ui, sans-serif;
       /* Establecemos el  color de texto global */
   body {
     color: theme('colors.mainText'); /* Usamos el color definido en tailwind.config.js */

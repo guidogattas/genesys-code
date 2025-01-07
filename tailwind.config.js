@@ -12,9 +12,9 @@ export default {
                 mainText: "#FFFFFF",
                 secondaryText: "#1EFFF2",
                 footerBG: "#101010",
-
             },
             fontFamily: {
+                'brandon': ['Brandon Grotesque', 'sans-serif'],
                 'inter': ['Inter', 'sans-serif'],
                 'arial': ['arial', 'sans-serif'],
             },

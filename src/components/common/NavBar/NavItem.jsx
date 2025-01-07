@@ -7,7 +7,7 @@ const NavItem = ({ to, label, className = "hover:bg-secondaryText", onClick, chi
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    // Cerrar el dropdown si haces clic fuera
+    /*useEffect para cerrar el dropdown si apretamos por fuera*/
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -30,7 +30,7 @@ const NavItem = ({ to, label, className = "hover:bg-secondaryText", onClick, chi
                     <Link
                         to={to}
                         onClick={() => {
-                            setIsDropdownOpen(false); 
+                            setIsDropdownOpen(false);
                             if (onClick) onClick();
                         }}
                         className="block w-full h-full"
