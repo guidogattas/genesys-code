@@ -14,7 +14,7 @@ export default {
                 footerBG: "#101010",
             },
             fontFamily: {
-                'brandon': ['Brandon Grotesque', 'sans-serif'],
+                'darker': ['Darker Grotesque', 'sans-serif'],
                 'inter': ['Inter', 'sans-serif'],
                 'arial': ['arial', 'sans-serif'],
             },

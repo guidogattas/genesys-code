@@ -4,10 +4,9 @@
 
 @layer base {
   html {
-    font-family: "brandon","Inter", system-ui, sans-serif;
-      /* Establecemos el  color de texto global */
+    font-family: "darker","Inter", system-ui, sans-serif;
   body {
-    color: theme('colors.mainText'); /* Usamos el color definido en tailwind.config.js */
+    color: theme('colors.mainText'); 
   }
   }
 }
@@ -18,3 +17,4 @@ ul {
   margin: 0;
   padding: 0;
 }
+

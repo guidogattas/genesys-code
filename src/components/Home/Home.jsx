@@ -1,7 +1,7 @@
 const Home = () => {
     return (
         <>
-            <div className="flex flex-col min-h-screen px-6 pt-20 text-left text-white bg-black">
+            <div className="flex flex-col min-h-screen px-6 pt-20 text-left text-white ">
                 <p className="mb-2 text-lg text-teal-400">
                     Flexible IT Support and Software Developer Talent Deployed On-Site and Remotely
                 </p>
