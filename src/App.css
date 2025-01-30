@@ -4,17 +4,29 @@
 
 @layer base {
   html {
-    font-family: "darker","Inter", system-ui, sans-serif;
-  body {
-    color: theme('colors.mainText'); 
+    font-family: "Darker", "Inter", system-ui, sans-serif;
   }
+  body {
+    color: theme('colors.mainText');
   }
 }
 
-ol,
-ul {
+/* Reset de listas */
+ol, ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Animación de fondo */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(70deg, #1e1e1e, #3b3b3b, #1e1e1e);
+  background-size: 300% 300% !important;
+  animation: gradientMove 8s ease infinite !important;
+}

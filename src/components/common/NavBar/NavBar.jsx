@@ -23,15 +23,12 @@ const NavBar = () => {
             {/* Menú compartido */}
             <ul
                 className={`flex flex-col md:flex-row gap-4 md:gap-2 text-mainText transition-all duration-300 ease-in-out
-                    ${isOpen ?
-                        'max-h-screen opacity-100'
-                        : 'max-h-0 md:max-h-full md:opacity-100'}
-                        text-[16px]
-                    overflow-hidden md:overflow-visible w-full px-4`
-                }
+        ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 md:max-h-full md:opacity-100'}
+        text-[16px]
+        overflow-hidden md:overflow-visible w-full px-4`}
             >
                 <NavItem label="Solutions">
-                    <ul className="flex flex-col w-full gap-2 bg-dropDownBG  md:w-[340px] md:shadow-lg md:rounded-lg ">
+                    <ul className="flex flex-col items-center w-full gap-2 bg-dropDownBG md:w-[340px] md:shadow-lg md:rounded-lg justify-normal">
                         <NavItem to="/solutions/supportgo" label="SupportGo - IT Support" />
                         <NavItem to="/solutions/supportflex" label="SupportFlex - Embedded Skills" />
                         <NavItem to="/solutions/supportdesk" label="SupportDesk - Dedicated Helpdesk" />
@@ -43,9 +40,10 @@ const NavBar = () => {
                 <NavItem
                     to="/contact-us"
                     label="Contact Us"
-                    className="px-4 py-2 rounded-lg bg-secondaryText text-customGrey hover:bg-opacity-80"
+                    className="px-4 py-2 text-white rounded-lg bg-buttonMain hover:bg-buttonHover"
                 />
             </ul>
+
         </nav>
     );
 };

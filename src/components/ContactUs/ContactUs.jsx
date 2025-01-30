@@ -26,7 +26,7 @@ const ContactUs = () => {
         setIsSubmitting(true);
         setError(null);
 
-        // Configura tus IDs de EmailJS
+
         const serviceID = "service_fvrt8zn";
         const templateID = "template_8qstzpv";
         const userID = "CkZCdshDCDm07vF3c";
@@ -124,8 +124,9 @@ const ContactUs = () => {
 
                         <button
                             type="submit"
-                            className={`w-full py-3 font-bold text-white transition duration-300 rounded-md ${isSubmitting ? "bg-gray-400" : "bg-customOrange hover:bg-customWhite hover:text-black"
-                                }`}
+                            className={`w-full py-3 font-bold text-white transition duration-300 rounded-md 
+        ${isSubmitting ? "bg-gray-400" : "bg-buttonMain hover:bg-buttonHover hover:text-white"}
+    `}
                             disabled={isSubmitting}
                             aria-busy={isSubmitting}
                             aria-live="polite"
