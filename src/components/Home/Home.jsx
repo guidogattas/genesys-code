@@ -1,3 +1,5 @@
+import Benefits from "./Benefits/Benefits";
+
 const Home = () => {
     return (
         <>
@@ -19,6 +21,8 @@ const Home = () => {
                     <li>IT support, talent outsourcing, and project management services.</li>
                     <li>Expertise in data analytics, cybersecurity consulting, and network management.</li>
                 </ul>
+                <Benefits />
+                <img src="public\images\IT-management.avif" alt="it image" className="m-20 mx-auto" />
             </div>
         </>
     );
