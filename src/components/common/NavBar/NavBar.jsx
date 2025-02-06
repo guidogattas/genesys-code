@@ -9,7 +9,7 @@ const NavBar = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="relative w-full md:flex bg-customGrey">
+        <nav className="relative w-full md:flex">
             <div className="flex items-center justify-between px-4 py-4 md:px-10">
                 {/* Botón Toggle */}
                 <button
@@ -28,7 +28,7 @@ const NavBar = () => {
         overflow-hidden md:overflow-visible w-full px-4`}
             >
                 <NavItem label="Solutions">
-                    <ul className="flex flex-col items-center w-full gap-2 bg-dropDownBG md:w-[340px] md:shadow-lg md:rounded-lg justify-normal">
+                    <ul className="flex flex-col w-full gap-2 bg-dropDownBG md:w-[340px] md:shadow-lg md:rounded-lg justify-normal">
                         <NavItem to="/solutions/supportgo" label="SupportGo - IT Support" />
                         <NavItem to="/solutions/supportflex" label="SupportFlex - Embedded Skills" />
                         <NavItem to="/solutions/supportdesk" label="SupportDesk - Dedicated Helpdesk" />
@@ -40,7 +40,7 @@ const NavBar = () => {
                 <NavItem
                     to="/contact-us"
                     label="Contact Us"
-                    className="px-4 py-2 text-white rounded-lg bg-buttonMain hover:bg-buttonHover"
+                    className="px-4 py-2 rounded-lg text-buttonText bg-buttonMain hover:bg-buttonHover"
                 />
             </ul>
 

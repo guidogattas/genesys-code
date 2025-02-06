@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 const Header = () => {
     return (
         <>
-            <section className='flex flex-col md:flex-row items-center justify-around px-4 py-4 bg-bgMainColor text-mainText font-bold text-[18px]'>
+            <section className='flex flex-col md:flex-row items-center justify-around px-4 py-4 bg-navBarBG text-mainText font-bold text-[18px]'>
                 <div className='flex items-center md:w-1/2'>
                     <Link
                         to="/"

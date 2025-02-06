@@ -26,7 +26,6 @@ const ContactUs = () => {
         setIsSubmitting(true);
         setError(null);
 
-
         const serviceID = "service_fvrt8zn";
         const templateID = "template_8qstzpv";
         const userID = "CkZCdshDCDm07vF3c";
@@ -54,7 +53,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="px-8 py-16 bg-customGrey text-customWhite">
+        <div className="px-8 py-16 bg-customGrey text-mainText">
             <div className="grid gap-8 mx-auto max-w-7xl md:grid-cols-2">
                 {/* Left Section */}
                 <div>
@@ -69,7 +68,7 @@ const ContactUs = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="p-8 bg-black rounded-lg">
+                <div className="p-8 rounded-2xl bg-bgMainColor">
                     <form onSubmit={handleSubmit}>
                         <div className="space-y-4">
                             <input
@@ -78,7 +77,7 @@ const ContactUs = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 placeholder="Name"
-                                className="w-full p-3 text-black border border-gray-600 rounded-md bg-customGrey focus:outline-none focus:border-customOrange"
+                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
                                 required
                             />
                             <input
@@ -87,7 +86,7 @@ const ContactUs = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 placeholder="Email"
-                                className="w-full p-3 text-black border border-gray-600 rounded-md bg-customGrey focus:outline-none focus:border-customOrange"
+                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
                                 required
                             />
                             <input
@@ -96,7 +95,7 @@ const ContactUs = () => {
                                 value={formData.phone}
                                 onChange={handleChange}
                                 placeholder="Phone"
-                                className="w-full p-3 text-black border border-gray-600 rounded-md bg-customGrey focus:outline-none focus:border-customOrange"
+                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
                             />
                             <input
                                 type="text"
@@ -104,7 +103,7 @@ const ContactUs = () => {
                                 value={formData.company}
                                 onChange={handleChange}
                                 placeholder="Company Name"
-                                className="w-full p-3 text-black border border-gray-600 rounded-md bg-customGrey focus:outline-none focus:border-customOrange"
+                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
                             />
                             <textarea
                                 name="message"
@@ -112,7 +111,7 @@ const ContactUs = () => {
                                 onChange={handleChange}
                                 placeholder="Message"
                                 rows="4"
-                                className="w-full p-3 text-black border border-gray-600 rounded-md bg-customGrey focus:outline-none focus:border-customOrange"
+                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
                                 required
                             ></textarea>
                         </div>
@@ -124,8 +123,8 @@ const ContactUs = () => {
 
                         <button
                             type="submit"
-                            className={`w-full py-3 font-bold text-white transition duration-300 rounded-md 
-        ${isSubmitting ? "bg-gray-400" : "bg-buttonMain hover:bg-buttonHover hover:text-white"}
+                            className={`w-full py-3 font-bold text-buttonText transition duration-300 rounded-md 
+        ${isSubmitting ? "bg-gray-400" : "bg-buttonMain hover:bg-buttonHover"}
     `}
                             disabled={isSubmitting}
                             aria-busy={isSubmitting}

@@ -7,12 +7,12 @@ export default {
         extend: {
             colors: {
                 bgMainColor: "#181818",
-                navBarBG: "#1F1F1F",
+                navBarBG: "#181818",
                 dropDownBG: "#194643",
                 mainText: "#FFFFFF",
                 secondaryText: "#1EFFF2",
-                footerBG: "#101010",
-                buttonMain: "#14b8a6", 
+                footerBG: "#181818",
+                buttonMain: "#14b8a6",
                 buttonHover: "#0d9488",
                 buttonText: "#FFFFFF",
             },

@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 animated-bg">
+      <div className="flex flex-col min-h-screen animated-bg">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<Solutions />} />
