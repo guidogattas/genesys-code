@@ -27,23 +27,17 @@ const NavBar = () => {
         text-[16px]
         overflow-hidden md:overflow-visible w-full px-4`}
             >
-                <NavItem label="Solutions">
-                    <ul className="flex flex-col w-full gap-2 bg-dropDownBG md:w-[340px] md:shadow-lg md:rounded-lg justify-normal">
-                        <NavItem to="/solutions/supportgo" label="SupportGo - IT Support" />
-                        <NavItem to="/solutions/supportflex" label="SupportFlex - Embedded Skills" />
-                        <NavItem to="/solutions/supportdesk" label="SupportDesk - Dedicated Helpdesk" />
-                    </ul>
-                </NavItem>
+                <NavItem to="/solutions" label="Solutions" />
+
                 <NavItem to="/what-we-do" label="What We Do" />
                 <NavItem to="/who-we-are" label="Who We Are" />
                 <NavItem to="/careers" label="Careers" />
                 <NavItem
                     to="/contact-us"
                     label="Contact Us"
-                    className="px-4 py-2 rounded-lg text-buttonText bg-buttonMain hover:bg-buttonHover"
+                    className="px-4 py-2 rounded-lg text-buttonText bg-buttonMain hover:bg-buttonSecondary"
                 />
             </ul>
-
         </nav>
     );
 };

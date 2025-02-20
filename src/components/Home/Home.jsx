@@ -15,7 +15,7 @@ const Home = () => {
 
                     <Link
                         to="/contact-us"
-                        className="px-6 py-3 font-semibold text-black transition duration-300 bg-teal-400 rounded-md hover:bg-teal-500"
+                        className="px-6 py-3 font-semibold text-black transition duration-300 rounded-md bg-buttonMain hover:bg-buttonSecondary"
                     >
                         Contact us
                     </Link>

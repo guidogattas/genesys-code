@@ -12,9 +12,10 @@ export default {
                 mainText: "#FFFFFF",
                 secondaryText: "#1EFFF2",
                 footerBG: "#181818",
-                buttonMain: "#14b8a6",
+                buttonMain: "#4FD1C5",
+                buttonSecondary: "#38B2AC",
                 buttonHover: "#0d9488",
-                buttonText: "#FFFFFF",
+                buttonText: "#181818",
             },
             fontFamily: {
                 'darker': ['Darker Grotesque', 'sans-serif'],
