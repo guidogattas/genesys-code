@@ -30,3 +30,34 @@ ol, ul {
   background-size: 300% 300% !important;
   animation: gradientMove 8s ease infinite !important;
 }
+
+/* Animación de spinner */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* Animación de pulso */
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Un poco más grande */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-heart {
+  animation: heartPulse 1.5s ease-in-out infinite;
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
+import logo from "../../../../public/images/logo.png";
 
 const Header = () => {
     return (
@@ -8,9 +9,11 @@ const Header = () => {
                 <div className='flex items-center md:w-1/2'>
                     <Link
                         to="/"
-                        className="block py-8 font-bold text-center transition duration-300 rounded md:px-10 "
+                        className="block py-8 font-bold text-center transition duration-300 transform scale-100 rounded md:px-10 pulse-heart hover:scale-125"
                     >
-                        LOGO
+
+                        <img src={logo} alt="Logo" className="w-auto h-[120px]" />
+
                     </Link>
                 </div>
                 <NavBar />
