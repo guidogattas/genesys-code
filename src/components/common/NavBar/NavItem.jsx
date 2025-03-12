@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const NavItem = ({ to, label, className = "hover:bg-secondaryText", onClick, children }) => {
+const NavItem = ({ to, label, className = "hover:bg-buttonMain hover:text-black", onClick, children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
 
