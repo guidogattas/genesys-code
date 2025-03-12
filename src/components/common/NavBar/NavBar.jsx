@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         <nav className="relative w-full md:flex">
-            <div className="flex items-center justify-between px-4 py-4 md:px-10">
+            <div className="flex items-center justify-between px-4 py-4 lg:px-10">
                 {/* Botón Toggle */}
                 <button
                     className="ml-auto text-mainText focus:outline-none md:hidden"
@@ -23,12 +23,10 @@ const NavBar = () => {
             {/* Menú compartido */}
             <ul
                 className={`flex flex-col md:flex-row gap-4 md:gap-2 text-mainText transition-all duration-300 ease-in-out
-        ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 md:max-h-full md:opacity-100'}
-        text-[16px]
-        overflow-hidden md:overflow-visible w-full px-4`}
+                ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 md:max-h-full md:opacity-100'}
+                text-[16px] overflow-hidden md:overflow-visible w-full px-4 md:px-0`}
             >
                 <NavItem to="/solutions" label="Solutions" />
-
                 <NavItem to="/what-we-do" label="What We Do" />
                 <NavItem to="/who-we-are" label="Who We Are" />
                 <NavItem to="/careers" label="Careers" />
