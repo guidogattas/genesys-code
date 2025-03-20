@@ -10,12 +10,12 @@ const Header = () => {
                 <div className='flex items-center justify-center gap-6 lg:w-1/2'>
                     <Link to="/" className="block py-4 font-bold text-center transition-all duration-300 transform scale-100 pulse-heart ">
                         <img src={logo} alt="Logo" className="w-auto h-[100px] md:h-[100px] " />
+                        {/* Header Title */}
+                        <h1 className="font-bold text-center font-inter hidden md:block text-[24px]">
+                            {/* <span className="text-teal-300">GENESYS</span> <span className="text-[#F07C3F]">CODE</span> */}
+                            <span className="text-[#F07C3F]">GENESYS</span> <span className="text-teal-300">CODE</span>
+                        </h1>
                     </Link>
-                    {/* Header Title */}
-                    <h1 className="font-bold text-center font-inter hidden md:block text-[24px]">
-                        {/* <span className="text-teal-300">GENESYS</span> <span className="text-[#F07C3F]">CODE</span> */}
-                        <span className="text-[#F07C3F]">GENESYS</span> <span className="text-teal-300">CODE</span>
-                    </h1>
                 </div>
 
                 {/* Navigation Bar */}
