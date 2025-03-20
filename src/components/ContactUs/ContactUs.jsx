@@ -13,6 +13,8 @@ const ContactUs = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState(null);
 
+    const formStyle = "w-full p-3 border rounded-md text-black border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -77,7 +79,7 @@ const ContactUs = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 placeholder="Name"
-                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+                                className={formStyle}
                                 required
                             />
                             <input
@@ -86,7 +88,7 @@ const ContactUs = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 placeholder="Email"
-                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+                                className={formStyle}
                                 required
                             />
                             <input
@@ -95,7 +97,7 @@ const ContactUs = () => {
                                 value={formData.phone}
                                 onChange={handleChange}
                                 placeholder="Phone"
-                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+                                className={formStyle}
                             />
                             <input
                                 type="text"
@@ -103,7 +105,7 @@ const ContactUs = () => {
                                 value={formData.company}
                                 onChange={handleChange}
                                 placeholder="Company Name"
-                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+                                className={formStyle}
                             />
                             <textarea
                                 name="message"
@@ -111,7 +113,7 @@ const ContactUs = () => {
                                 onChange={handleChange}
                                 placeholder="Message"
                                 rows="4"
-                                className="w-full p-3 border rounded-md text-mainText border-mainText bg-customGrey focus:outline-none focus:border-customOrange"
+                                className={formStyle}
                                 required
                             ></textarea>
                         </div>
