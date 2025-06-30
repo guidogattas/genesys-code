@@ -29,7 +29,6 @@ const NavBar = () => {
                 <NavItem to="/solutions" label="Solutions" />
                 <NavItem to="/what-we-do" label="What We Do" />
                 <NavItem to="/who-we-are" label="Who We Are" />
-                <NavItem to="/careers" label="Careers" />
                 <NavItem
                     to="/contact-us"
                     label="Contact Us"
