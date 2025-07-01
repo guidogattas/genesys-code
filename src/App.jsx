@@ -9,7 +9,6 @@ import Header from './components/common/Header/Header.jsx';
 import Solutions from './components/Solutions/Solutions.jsx';
 import WhatWeDo from './components/WhatWeDo/WhatWeDo.jsx';
 import WhoWeAre from './components/WhoWeAre/WhoWeAre.jsx';
-import Careers from './components/Careers/Careers.jsx';
 import Error from './components/common/Error/Error.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
 
